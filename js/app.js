@@ -17,12 +17,6 @@ const app = {
             selector.addEventListener("click", (event) => this.handleCopyContent(event));
         });
 
-        // On sélectionne la gomme
-        const eraser = document.querySelector('.eraser');
-
-        // On place un addEventListener sur la gomme
-        eraser.addEventListener("click", (event) => this.handleEraseContent(event));
-
         // On sélectionne toutes les cellules
         const cells = document.querySelectorAll(".grid");
 
@@ -52,6 +46,8 @@ const app = {
     handleStartNewGame: async function () {
         console.log("Youhou, tu as cliqué sur Nouvelle partie !");
 
+        // On reboot la couleur la grille (class starting-number enlevée de toutes les cellules)
+        this.rebootGrid();
         // On reboot la couleur des selecteurs
         this.rebootSelectors();
 
@@ -161,6 +157,38 @@ const app = {
         return true;
     },
 
+    compareCellAndSolution: function(event) {
+        // On récupère la cellule dans laquelle le chiffre est placée
+        const actualCell = event.currentTarget.classList[2];
+
+        // On récupère la valeur de la cellule où le chiffre est placé
+        const cellValue = event.currentTarget.innerHTML;
+        const cell = parseInt(cellValue);
+        console.log("Valeur cellule :", cell);
+
+        // On extrait du nom de la classe, l'indicatif de la ligne et celui de la colonne
+        // (ex: class "cell-4-5", on extrait "4" et "5")
+        const row = actualCell.substr(5, 1);
+        console.log(row);
+        const col = actualCell.substr(7, 1);
+        console.log(col);
+
+        // Cela va nous permettre de naviguer dans le tableau de la solution
+        // pour récupérer la valeur similaire au même endroit
+        const similarCell = this.sudoku.newboard.grids[0].solution;
+            console.log("Solution :", similarCell);
+        const cellSolution = similarCell[row][col];
+        console.log("Valeur case similaire", cellSolution);
+
+        // Si les deux valeurs sont différentes on passe la background en rougle clair pour indiquer une erreur
+        if (cell !== cellSolution) {
+            event.currentTarget.classList.add("error")
+        } else {
+            event.currentTarget.classList.remove("error")
+        }
+
+    },
+
     rebootSelectors() {
         // On sélectionne les sélecteurs
         const selectors = document.querySelectorAll(".selector");
@@ -168,6 +196,17 @@ const app = {
         // On reboot la class "selected"
         selectors.forEach(selector => {
             selector.classList.remove("selected");
+        });
+    },
+
+    rebootGrid() {
+        // On sélectionne toutes les cases de la grille
+        const grid = document.querySelectorAll(".grid");
+
+        // On supprime la class "starting-number" qui donne la couleur noire aux chiffres présents dans la grille au départ
+        grid.forEach(cell => {
+            cell.classList.remove("starting-number");
+            cell.classList.remove("error");
         });
     },
 
@@ -222,7 +261,7 @@ const app = {
 
         // On vérifie si la case est déjà occupée ou non par un chiffre de la grille générée aléatoirement, 
         // si c'est le cas, on return pour empêcher de coller un chiffre différent !
-        if (destinationDiv.textContent.length > 0) {
+        if (destinationDiv.classList.contains("starting-number")) {
             return;
         };
 
@@ -233,17 +272,11 @@ const app = {
             parseInt(destinationDiv.innerHTML);
             console.log(destinationDiv.innerHTML);
         };
-        const gridNow = this.getGrid();
-        console.log("Grid now :");
+        this.compareCellAndSolution(event);
+        // À supprimer en fin de projet (ci-dessous)
+        const gridNow = this.getGrid(); 
+        console.log("Grid now :"); 
         console.log(gridNow);
-    },
-
-    /**
-     * Fonction qui va permettre de sélectionner la gomme pour effacer un chiffre mal placé
-     * @param {*} event 
-     */
-    handleEraseContent: function(event) {
-        console.log("Ceci est une gomme !");
     },
 
     /**
@@ -292,61 +325,79 @@ const app = {
         tableau[0].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[0][index] = '';
+            } else {
+                row1[index].classList.toggle("starting-number");
             }
             row1[index].textContent = tableau[0][index];
         });
         tableau[1].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[1][index] = '';
+            } else {
+                row2[index].classList.toggle("starting-number");
             }
             row2[index].textContent = tableau[1][index];
         });
         tableau[2].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[2][index] = '';
+            } else {
+                row3[index].classList.toggle("starting-number");
             }
             row3[index].textContent = tableau[2][index];
         });
         tableau[3].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[3][index] = '';
+            } else {
+                row4[index].classList.toggle("starting-number");
             }
             row4[index].textContent = tableau[3][index];
         });
         tableau[4].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[4][index] = '';
+            } else {
+                row5[index].classList.toggle("starting-number");
             }
             row5[index].textContent = tableau[4][index];
         });
         tableau[5].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[5][index] = '';
+            } else {
+                row6[index].classList.toggle("starting-number");
             }
             row6[index].textContent = tableau[5][index];
         });
         tableau[6].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[6][index] = '';
+            } else {
+                row7[index].classList.toggle("starting-number");
             }
             row7[index].textContent = tableau[6][index];
         });
         tableau[7].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[7][index] = '';
+            } else {
+                row8[index].classList.toggle("starting-number");
             }
             row8[index].textContent = tableau[7][index];
         });
         tableau[8].forEach((valeur, index) => {
             if (valeur === 0) {
                 tableau[8][index] = '';
+            } else {
+                row9[index].classList.toggle("starting-number");
             }
             row9[index].textContent = tableau[8][index];
         });
     },
 
     /**
-     * Fonction qui va nous permettre d'obtenir la grille à l'instant T
+     * (À supprimer à la fin) Fonction qui va nous permettre d'obtenir la grille à l'instant T
      */
     getGrid: function () {
         const gridData = [];

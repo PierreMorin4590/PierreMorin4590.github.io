@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearthstone Memory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://c.webfontfree.com/c.js?f=BelweBT-Bold" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/Hearthstone-Logo.png" alt="Logo du jeu Hearthstone" width="400px">
+    </header>
+
+    <main>
+        <div class="playButton">
+            <img src="images/Jouer-1.png" alt="Bouton jouer" width="425px">
+            <p>Lancer la partie</p>
+        </div>
+        <div class="data hidden">
+            <p>Time: <span class="timerValue">0 sec</span></p>
+            <p>Errors: <span class="errorsValue">0</span></p>
+        </div>
+        <div class="memory"></div>
+        <div class="score hidden">
+            <img src="images/Score-0.png" alt="Pancarte des scores">
+            <div class="stats">
+                <p>Temps :
+                    <br>
+                    <span class="finalTime">0 sec</span>
+                </p>
+                <p>Erreurs:
+                    <br>
+                    <span class="finalErrors">0</span>
+                </p>
+            </div>
+        </div>
+        <div class="newGame hidden">
+            <p>Nouvelle partie</p>
+        </div>
+    </main>
+
+    <footer>
+        <p class="credit">Made with <span>❤️</span> by Pierre Morin</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

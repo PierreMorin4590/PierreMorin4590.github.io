@@ -100,7 +100,7 @@ const app = {
                 Swal.fire({
                     title: "Bravo !",
                     html: "La grille est correctement remplie !",
-                    imageUrl: "../images/Raccoon happy.png",
+                    imageUrl: "images/Raccoon happy.png",
                     imageWidth: 300,
                     imageAlt: "Un raton laveur heureux",
                 });
@@ -109,7 +109,7 @@ const app = {
                 Swal.fire({
                     title: "Essaie encore !",
                     html: "La grille n'est pas correctement remplie !",
-                    imageUrl: "../images/Raccoon sad.png",
+                    imageUrl: "images/Raccoon sad.png",
                     imageWidth: 300,
                     imageAlt: "Un raton laveur triste",
                 });
@@ -120,7 +120,7 @@ const app = {
             Swal.fire({
                 title: "Ooops !",
                 html: "La grille de Sudoku n'est pas chargée.<br>Cliquez sur Nouvelle Partie !",
-                imageUrl: "../images/Raccoon error.png",
+                imageUrl: "images/Raccoon error.png",
                 imageWidth: 300,
                 imageAlt: "Un raton laveur fait face à une erreur",
             });
@@ -234,11 +234,11 @@ const app = {
         const sourceNumber = event.currentTarget.textContent;
 
         // On construit la classe de source en fonction du numéro choisi
-        var sourceClass = '.selector:nth-child(' + sourceNumber + ')';
+        const sourceClass = '.selector:nth-child(' + sourceNumber + ')';
         console.log(sourceClass);
 
         // On sélectionne la source par sa classe
-        var sourceDiv = document.querySelector(sourceClass);
+        const sourceDiv = document.querySelector(sourceClass);
 
         // On vérifie si l'élément source est présent
         if (sourceDiv) {
@@ -259,11 +259,11 @@ const app = {
         const destinationNumber = event.currentTarget.classList[2];
 
         // On construit la classe de destination en fonction du numéro choisi
-        var destinationClass = '.' + destinationNumber;
+        const destinationClass = '.' + destinationNumber;
         console.log(destinationClass);
 
         // On sélectionne la destination par sa classe
-        var destinationDiv = document.querySelector(destinationClass);
+        const destinationDiv = document.querySelector(destinationClass);
         console.log(destinationDiv);
 
         // On vérifie si la case est déjà occupée ou non par un chiffre de la grille générée aléatoirement, 

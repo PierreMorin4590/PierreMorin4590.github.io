@@ -3,10 +3,10 @@
 Vous trouverez ici quelques projets javascript mis en place en parallèle de mon cursus de Développeur Web Fullstack PHP au sein de l'école O'clock. 
 
 ## Les projets
-• Création d'un sudoku en JavaScript à partir de l'API [Dosuku](https://sudoku-api.vercel.app/).
--> le repo [Sudoku](https://github.com/PierreMorin4590/sudoku)
+• Création d'un sudoku en JavaScript à partir de l'API [Dosuku](https://sudoku-api.vercel.app/).  
+-> le repo [Sudoku](https://github.com/PierreMorin4590/sudoku)  
 • Création d'un jeu de memory en JavaScript à partir de l'API [HearthstoneJSON](https://hearthstonejson.com/).  
--> le repo [Hearthstone Memory](https://github.com/PierreMorin4590/hearthstone-memory)
+-> le repo [Hearthstone Memory](https://github.com/PierreMorin4590/hearthstone-memory)  
 
 ## Quand ai-je réalisé ces projets ?
 Au moment de réaliser ces différents projets, nous venions de terminer la phase socle de la formation O'clock.  

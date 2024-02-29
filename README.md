@@ -22,6 +22,6 @@ Au moment de réaliser ces différents projets, nous venions de terminer la phas
 
 > [!NOTE]
 > Oui, j'avoue, j'aime bien les ratons laveurs :smile:  
-![Meeko and Flit from the Disney movie Pocahontas](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2F0Zm0zbWZyaGJndzc4amRqaHk2Nm41djByajZqeXppd2FoOGozaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RVwRcnpTHpND2/giphy.gif)
+![Meeko and Flit from the Disney movie Pocahontas](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2F0Zm0zbWZyaGJndzc4amRqaHk2Nm41djByajZqeXppd2FoOGozaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RVwRcnpTHpND2/giphy.gif)  
 > Et Hearthstone :smile:  
-![Hearthstone Gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNsZmMwaHZyZGp3NTk2dTJjc3d1dnpuMTFkdW9wdnJhOG5pMG83aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1pAe88hQLZ376QO2jM/giphy.gif)
+![Hearthstone Gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNsZmMwaHZyZGp3NTk2dTJjc3d1dnpuMTFkdW9wdnJhOG5pMG83aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1pAe88hQLZ376QO2jM/giphy.gif)  

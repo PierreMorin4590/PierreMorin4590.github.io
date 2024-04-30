@@ -7,6 +7,8 @@ Vous trouverez ici quelques projets javascript mis en place en parallèle de mon
 -> le repo [Sudoku](https://github.com/PierreMorin4590/sudoku)  
 • Création d'un jeu de memory en JavaScript à partir de l'API [HearthstoneJSON](https://hearthstonejson.com/).  
 -> le repo [Hearthstone Memory](https://github.com/PierreMorin4590/hearthstone-memory)  
+• Création d'un mini-site sur Pikachu en HTML/CSS avec Bootstrap.  
+-> le repo [CV Pikachu](https://github.com/PierreMorin4590/cv-pikachu-bootstrap)  
 
 ## Quand ai-je réalisé ces projets ?
 Au moment de réaliser ces différents projets, nous venions de terminer la phase socle de la formation O'clock.  
@@ -23,5 +25,7 @@ Au moment de réaliser ces différents projets, nous venions de terminer la phas
 > [!NOTE]
 > Oui, j'avoue, j'aime bien les ratons laveurs :smile:  
 ![Meeko and Flit from the Disney movie Pocahontas](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2F0Zm0zbWZyaGJndzc4amRqaHk2Nm41djByajZqeXppd2FoOGozaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RVwRcnpTHpND2/giphy.gif)  
-> Et Hearthstone :smile:  
+> ... et Hearthstone :smile:  
 ![Hearthstone Gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNsZmMwaHZyZGp3NTk2dTJjc3d1dnpuMTFkdW9wdnJhOG5pMG83aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1pAe88hQLZ376QO2jM/giphy.gif)  
+> ... et Pikachu :smile:  
+![Pikachu Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdrZXIycDNjdXoxNXl5em14dDA3dmkwcTNtYjljbG93aDNnM21vYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif)  

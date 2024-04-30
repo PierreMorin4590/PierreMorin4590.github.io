@@ -1,0 +1,31 @@
+/* {
+    border: 1px solid red;
+} */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    flex-shrink: 0;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Styles pour les flèches du carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ffc107;
+}

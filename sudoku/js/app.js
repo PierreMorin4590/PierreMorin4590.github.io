@@ -1,7 +1,7 @@
 const app = {
 
     // URL de l'API permettant de générer une grille
-    createUrl: "https://cors-anywhere.herokuapp.com/https://sudoku-game-and-api.netlify.app/api/sudoku",
+    createUrl: "https://sudoku-game-and-api.netlify.app/api/sudoku",
     contentToCopy: "",
     sudoku: null,
 

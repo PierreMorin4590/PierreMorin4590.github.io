@@ -1,7 +1,7 @@
 const app = {
 
     // URL de l'API permettant de générer une grille
-    createUrl: "https://corsproxy.io/?https%3A%2F%2Fsudoku-game-and-api.netlify.app%2Fapi%2Fsudoku",
+    createUrl: "https://corsproxy.io/?https://sudoku-game-and-api.netlify.app/api/sudoku",
     contentToCopy: "",
     sudoku: null,
 

@@ -296,7 +296,7 @@ const app = {
     getSudoku: async function () {
         try {
             // fetch retourne une promesse (objet)
-            const response = await fetch(this.createUrl);
+            const response = await fetch(this.createUrl, { mode: 'no-cors' });
 
             if (!response.ok) {
                 throw new Error(`Failed to fetch : ${response.status}`);

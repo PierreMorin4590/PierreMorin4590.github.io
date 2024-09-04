@@ -1,7 +1,7 @@
 const app = {
 
     // URL de l'API permettant de générer une grille
-    createUrl: "https://sudoku-game-and-api.netlify.app/api/sudoku",
+    createUrl: "https://cors-anywhere.herokuapp.com/https://sudoku-game-and-api.netlify.app/api/sudoku",
     contentToCopy: "",
     sudoku: null,
 
@@ -296,7 +296,7 @@ const app = {
     getSudoku: async function () {
         try {
             // fetch retourne une promesse (objet)
-            const response = await fetch(this.createUrl, { mode: 'no-cors' });
+            const response = await fetch(this.createUrl);
 
             if (!response.ok) {
                 throw new Error(`Failed to fetch : ${response.status}`);

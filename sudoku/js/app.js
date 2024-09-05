@@ -296,10 +296,11 @@ const app = {
      */
     getSudoku: async function () {
         try {
+            const timestamp = new Date().getTime();
+            const urlToFetch = `${this.proxyUrl}${this.createUrl}?t=${timestamp}`;
 
-            const urlToFetch = `${this.proxyUrl}${this.createUrl}`;
-            // fetch retourne une promesse (objet)
-            const response = await fetch(urlToFetch);
+            // fetch avec l'option no-store pour éviter la mise en cache
+            const response = await fetch(urlToFetch, { cache: "no-store" });
 
             if (!response.ok) {
                 throw new Error(`Failed to fetch : ${response.status}`);

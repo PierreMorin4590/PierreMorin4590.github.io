@@ -1,7 +1,6 @@
 const app = {
 
     // URL de l'API permettant de générer une grille
-    proxyUrl: "https://api.allorigins.win/get?url=",
     createUrl: "https://sudoku-game-and-api.netlify.app/api/sudoku",
     contentToCopy: "",
     sudoku: null,
@@ -296,11 +295,8 @@ const app = {
      */
     getSudoku: async function () {
         try {
-            const timestamp = new Date().getTime();
-            const urlToFetch = `${this.proxyUrl}${this.createUrl}?t=${timestamp}`;
-
-            // fetch avec l'option no-store pour éviter la mise en cache
-            const response = await fetch(urlToFetch, { cache: "no-store" });
+            // fetch retourne une promesse (objet)
+            const response = await fetch(this.createUrl);
 
             if (!response.ok) {
                 throw new Error(`Failed to fetch : ${response.status}`);

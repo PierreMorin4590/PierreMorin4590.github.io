@@ -299,7 +299,10 @@ const app = {
 
             const urlToFetch = `${this.proxyUrl}${this.createUrl}`;
             // fetch retourne une promesse (objet)
-            const response = await fetch(urlToFetch);
+            const response = await fetch(urlToFetch, {
+                method: 'GET',
+                cache: 'no-store'
+            });
 
             if (!response.ok) {
                 throw new Error(`Failed to fetch : ${response.status}`);
